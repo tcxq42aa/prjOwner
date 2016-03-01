@@ -1,0 +1,133 @@
+/* 内容 */
+section {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+section:before {
+    content: ' ';
+    display: block;
+    height: 1px;
+    margin-bottom: -1px;
+}
+section:first-child {
+    border-top: 0;
+}
+
+.content {
+    padding-top: 48px;
+}
+.content h3 {
+    font-weight: normal;
+}
+
+.property-info .row > .col-4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+.property-info .row > .col-4,
+.avg-price-info  .row > .col-4 {
+    border-right: 1px solid #ddd;
+}
+.property-info .row > .col-4:last-child {
+    border-right: 0;
+}
+.property-info .row {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.property-info .price {
+    padding: 10px;
+}
+
+.chart-container {
+    height: 300px;
+}
+
+.price-info {
+    padding: 20px 10px;
+}
+
+.deal-info {
+    position: relative;
+}
+.deal-info .row {
+    position: relative;
+}
+.deal-info .row > .col-4 {
+    padding-right: 0;
+    z-index: 1;
+    position: relative;
+}
+.deal-info >.row {
+    border-top: 1px solid #ddd;
+}
+.deal-info .col-4:first-child {
+    width: 50%;
+}
+.deal-info .col-4:nth-child(2) {
+    width: 30%;
+    text-align: right;
+}
+.deal-info .col-4:nth-child(3) {
+    width: 20%;
+}
+.deal-info .my-price {
+    padding: 8px 15px;
+    text-align: left;
+    float: right;
+}
+.deal-info .row > .precent {
+    display: block;
+    height: 100%;
+    position: absolute;
+    background-color: #CBF0FF;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    transition: width .8s ease-out;
+}
+.deal-info .row.highlight > .precent {
+    background-color: #1083FF;
+}
+.deal-info .highlight .col-4:nth-child(1) * {
+    color: #fff;
+}
+.deal-info > .precent {
+    height: 100%;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    border-right: 1px dashed #2DAAFF;
+}
+.deal-info > .precent:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: #2DAAFF;
+    right: -3px;
+    top: -2px;
+}
+.tip:after {
+    display: inline;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.tip-new:after {
+    content: '新';
+    background: #D34F2F;
+    border: 1px solid #D34F2F;
+    color: #fff;
+}
+.tip-mine:after {
+    content: '我的';
+    width: 24px;
+    color: #fff;
+    border: 1px solid #fff;
+}

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {
+    font: 1.4rem "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #F5F5F5;
+}
+a{
+    text-decoration: none;
+}
+
+/* 头部 */
+header {
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-size: 18px;
+    background-color: #45A45F;
+    color: #fff;
+    z-index: 999;
+}
+header a:visited, header a {
+    color: inherit;
+}
+header i:nth-child(1),
+header i:nth-child(2){
+    position: absolute;
+    height: 100%;
+    width: 48px;
+    line-height: 48px;
+    font-size: 24px;
+}
+header i:nth-child(1) {
+    left: 0;
+}
+header i:nth-child(2) {
+    right: 0;
+}
+/* 通用 */
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.clearfix:after{
+    content:".";display:block;height:0;clear:both;visibility:hidden
+}
+.f12 {
+    font-size: 12px;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-lg {
+    font-size: 18px;
+}
+.row {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.col-4,.col-6 {
+    padding: 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.row.vert-middle .col-4,.col-6 {
+    vertical-align: middle;
+}
+.row.vert-top .col-4,.col-6 {
+    vertical-align: top;
+}
+.row.vert-bottom .col-4,.col-6 {
+    vertical-align: bottom;
+}
+.col-4 {
+    width: 33.333333%;
+    max-width: 33.333333%;
+}
+.col-4:nth-child(4) {
+    width: 33.333334%;
+    max-width: 33.333334%;
+}
+.col-6 {
+    width: 66.666666%;
+}
+.col-6:nth-child(2) {
+    width: 33.333334%;
+}
+.c-gray {
+    color: #aaa;
+}
+.c-red {
+    color: #D34F2F;
+}
+.c-green {
+    color: #45A45F;
+}
+.t-bold {
+    font-weight: bold;
+}
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid #45A45F;
+    border-radius: 4px;
+    color: #45A45F;
+    padding: 0 10px;
+    line-height: 30px;
+}
+.btn.active {
+    background-color: #45A45F;
+    color: #fff;
+}
+.btn-group {
+    display: inline-block;
+}
+.btn-group .btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btn-group .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.mt10{margin-top: 10px;}
+.mb10{margin-bottom: 10px;}
+.pl10{padding-left: 10px;}
+.pr10{padding-right: 10px;}

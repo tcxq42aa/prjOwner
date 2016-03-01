@@ -1,0 +1,5 @@
+	html,body{ height:100%; overflow:hidden;}
+	.section{ display: none; position:absolute; top:0px; left:0; width:100%; bottom: 0; padding-top: 40px;}
+	.section.current{ display:inline-block;}
+	.section.next{ display:inline-block; z-index: 2;}
+	.section.prev{ display:inline-block; z-index: 2;}
