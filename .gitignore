@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+public/dest/fonts
+public/dest/images
+public/dest/javascripts
+public/dest/stylesheets
+node_modules
+*.iml

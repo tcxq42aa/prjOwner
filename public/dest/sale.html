@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <link rel='stylesheet' href='./stylesheets/all.css'/>
+    <link rel='stylesheet' href='./stylesheets/sale.css'/>
+</head>
+<body>
+<header>
+    <i class="icon-iconfont-arrowleft"></i>
+    <i class="icon-iconfont-close"></i>
+    <span>售价比较</span>
+</header>
+
+<div class="content">
+    <!--小区信息-->
+    <section class="property-info">
+        <h3 class="text-center">大华锦绣华城(十六街区)</h3>
+        <div class="row">
+            <div class="col-4 text-center">
+                <div class="text-lg">3室2厅</div>
+                <small class="c-gray">119.68平</small>
+            </div>
+            <div class="col-4 text-center">
+                <small class="c-gray">市场评估价</small>
+                <div class="text-lg">611万</div>
+            </div>
+            <div class="col-4 text-center">
+                <small class="c-gray">我的挂牌价</small>
+                <br>
+                <span class="text-lg c-red">730万</span><small class="c-red">偏高</small>
+            </div>
+        </div>
+        <div class="price clearfix">
+            <div class="pull-left f12">
+                本小区当前成交均价为: 5114元/㎡<br>
+                <span class="c-gray">*市场评估价根据小区近期成交价计算得出</span>
+            </div>
+            <div class="pull-right">
+                <a class="btn" href="#">调整价格</a>
+            </div>
+        </div>
+    </section>
+
+    <!--价格信息-->
+    <section class="price-info text-center">
+        <div class="btn-group">
+            <div class="btn active" data-chart="1">挂牌均价</div><div class="btn" data-chart="2">成交均价</div>
+        </div>
+        <div id="chart" class="chart-container mt10"></div>
+        <div class="text-left c-gray pl10 f12">*相似房源是指户型相同</div>
+    </section>
+
+    <!--小区房源单价比较-->
+    <p class="pl10 c-gray">小区房源单价比较</p>
+    <section class="avg-price-info text-center">
+        <div class="row">
+            <div class="col-4 text-center">
+                <small class="c-gray">挂牌房源</small>
+                <div class="text-lg">8套</div>
+            </div>
+            <div class="col-4 text-center">
+                <small class="c-gray">单价更<span class="c-green">低</span></small>
+                <div class="text-lg">5套</div>
+            </div>
+            <div class="col-4 text-center">
+                <small class="c-gray">单价更<span class="c-red">高</span></small>
+                <div class="text-lg">3套</div>
+            </div>
+        </div>
+    </section>
+
+    <!--小区成交详情-->
+    <p class="pl10 c-gray">小区成交详情</p>
+    <section class="deal-info text-center" data-precent="68">
+        <div class="my-price">
+            <span class="c-gray">我的单价</span><br>
+            <small>50,029元/㎡</small>
+        </div>
+        <div class="row" data-precent="55.5">
+            <div class="col-4 text-left">
+                <span>大华锦绣华城</span>
+                <label class="tip tip-new"></label>
+                <br>
+                <small class="c-gray">3室, 123.46平</small>
+            </div>
+            <div class="col-4 c-gray">
+                <small>46,029元/㎡</small>
+            </div>
+            <div class="col-4 c-red">730万</div>
+        </div>
+        <div class="row highlight" data-precent="68">
+            <div class="col-4 text-left">
+                <span class="ellipsis">大华锦绣华城</span>
+                <label class="tip tip-mine"></label>
+                <br>
+                <small class="c-gray">3室, 123.46平</small>
+            </div>
+            <div class="col-4 c-gray">
+                <small>46,029元/㎡</small>
+            </div>
+            <div class="col-4 c-red">730万</div>
+        </div>
+        <div class="row" data-precent="70">
+            <div class="col-4 text-left">
+                <span>大华锦绣华城大华锦绣华城大华锦绣华城</span>
+                <label class="tip tip-new"></label>
+                <br>
+                <small class="c-gray">3室, 123.46平</small>
+            </div>
+            <div class="col-4 c-gray">
+                <small>46,029元/㎡</small>
+            </div>
+            <div class="col-4 c-red">730万</div>
+        </div>
+    </section>
+
+</div>
+</body>
+<script type="text/javascript" src="./javascripts/jquery.min.js"></script>
+<script type="text/javascript" src="./javascripts/echarts.min.js"></script>
+<script type="text/javascript" src="./javascripts/main.js"></script>
+</html>
