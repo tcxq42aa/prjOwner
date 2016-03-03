@@ -33,7 +33,6 @@ $(function() {
             }
         });
         $('.feedback-container .footer').show();
-        $('.feedback-container .btn-submit').removeClass('disabled');
 
         if(index < 4) {
             $('.module').show();
@@ -53,14 +52,20 @@ $(function() {
     });
 
     $('.module ul').on('click', 'li',  function(e){
-        $(this).toggleClass('selected')
+        $(this).toggleClass('selected');
+        if($('.module ul li.selected').length > 0) {
+            $('.btn-submit').removeClass('disabled');
+        } else {
+            $('.btn-submit').addClass('disabled');
+        }
     });
 
-    $('.btn-add').on('click', function(e){
-        $(this).closest('.module').find('.input-add').show();
-        $(this).hide();
-        e.preventDefault();
+    $('.input-add input').on('click', function(e){
+        var $module = $(this).closest('.module');
+        $('.input-add', $module).css('opacity', 1);
+        $('.btn-add', $module).css('opacity', 0);
     });
+
     $('.input-add .btn').on('click', function(){
         var $module = $(this).closest('.module');
         var $input = $('.input-add input', $module);
@@ -68,8 +73,9 @@ $(function() {
         if($input.val()) {
             $list.append('<li class="selected">' + $input.val() + '</li>');
             $input.val('');
-            $('.input-add', $module).hide();
-            $('.btn-add', $module).show();
+            $('.input-add', $module).css('opacity', 0);
+            $('.btn-add', $module).css('opacity', 1);
+            $('.btn-submit').removeClass('disabled');
         }
     });
 
@@ -88,24 +94,24 @@ $(function() {
         hideFeedback(true);
     });
 
-    $('footer').on('touchmove', function(e){
-        e.preventDefault();
-    });
 
     function showFeedback() {
         $('.feedback-layer').show();
         $('.feedback-container').addClass('active');
     }
 
+    var timer;
     function hideFeedback(success) {
+        if(timer){
+            clearTimeout(timer);
+        }
         if(success) {
             $('.feedback-success').show();
-            setTimeout(function(){
-                $('.feedback-success').hide();
-                $('.feedback-layer').hide();
-            }, 2000)
+            timer = setTimeout(function(){
+                $('.feedback-layer,.feedback-success').hide();
+            }, 5000)
         } else {
-            $('.feedback-layer').hide();
+            $('.feedback-layer,.feedback-success').hide();
         }
         $('.feedback-container').removeClass('active');
     }

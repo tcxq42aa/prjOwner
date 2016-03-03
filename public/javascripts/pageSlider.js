@@ -220,9 +220,9 @@
             that.showSec(that.opt.startPage)
         }
 
-        $(window).on('onorientationchange' in window ? 'orientationchange':'resize',function(){
+        /*$(window).on('onorientationchange' in window ? 'orientationchange':'resize',function(){
             that.go(that.index+1);
-        });
+        });*/
     };
 
     /**

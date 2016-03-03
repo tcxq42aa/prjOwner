@@ -185,25 +185,27 @@ footer .btn {
     z-index: 10001;
     display: none;
     top: 0;
-    bottom: 0;
+    height: 100%;
     width: 100%;
     background: rgba(0,0,0,.5);
 }
 
 .feedback-container .footer {
+    display: none;
     position: fixed;
     bottom: 0;
     width: 100%;
     border-top: 1px solid #eee;
+}
+.feedback-container .btn-submit.disabled {
+    opacity: .5;
 }
 .feedback-container .btn-submit {
     text-align: center;
     padding: 1rem 2rem;
     background: #45A45F;
     color: #fff;
-}
-.feedback-container .btn-submit.disabled {
-    opacity: .5;
+    font-size: 1.6rem;
 }
 .module {
     display: none;
@@ -249,10 +251,12 @@ footer .btn {
 }
 
 .input-add {
+    opacity: 0;
     position: relative;
+    z-index: 2;
     border-bottom: 1px solid #eee;
     padding: 0.4rem 0;
-    display: none;
+    margin-top: -3.0rem;
 }
 .input-add input:focus {
     outline: none;
@@ -294,6 +298,6 @@ footer .btn {
     margin: auto;
     height: 64%;
     width: 60%;
-    background: #fff url('../images/sent.png') no-repeat;
+    background: #fff url('../images/sent.png') no-repeat center;
     background-size: contain;
 }
