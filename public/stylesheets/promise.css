@@ -5,7 +5,7 @@ body {
 .header {
     height: 4.0rem;
     line-height: 4.0rem;
-    color: #45A45F;
+    color: #00AE66;
     background: transparent;
     z-index: 10000;
     position: fixed;
@@ -22,7 +22,7 @@ body {
 }
 
 .content {
-    color: #45A45F;
+    color: #00AE66;
 }
 .content .replace {
     position: absolute;
@@ -36,12 +36,12 @@ body {
     margin-top: .5rem;
 }
 .title {
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 .sub-title {
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
     -webkit-font-smoothing: antialiased;
 }
 .sub-title.sub-title-sm {
@@ -53,9 +53,12 @@ footer {
     bottom: 0;
     width: 100%;
     color: #fff;
-    background-color: #45A45F;
-    padding: 1rem 0 1.5rem;
+    background-color: #00AE66;
+    padding: 1rem 0 2.4rem;
     z-index: 10;
+}
+footer .title {
+    font-size: 2.6rem;
 }
 footer .btn {
     color: #fff;
@@ -66,6 +69,7 @@ footer .btn {
     font-size: 1.6rem;
 }
 .img {
+    margin-top: .5rem;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,7 +92,7 @@ footer .btn {
     left: 50%;
     transform: translateX(-50%);
     display: inline-block;
-    color: #45A45F;
+    color: #00AE66;
 }
 .action-down i {
     font-size: 2rem;
@@ -144,14 +148,14 @@ footer .btn {
     transform: translateY(0);
 }
 .feedback-container .agent-avatar {
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
     overflow: hidden;
     border-radius: 50%;
     margin: auto;
 }
 .feedback-container .agent-avatar img {
-    width: 7rem;
+    width: 9rem;
     margin-top: -.5rem;
 }
 .feedback-container .btn-close {
@@ -164,18 +168,20 @@ footer .btn {
 }
 .feedback-container p {
     margin: 0.5rem 0;
+    font-size: 1.6rem;
 }
 .feedback-container ul.stars {
     padding: 0;
     list-style: none;
+    margin-bottom: .5rem;
 }
 .feedback-container ul.stars .star {
     background: url('../images/star.png') no-repeat;
     background-size: contain;
     display: inline-block;
     margin: 0 .6rem;
-    width: 2rem;
-    height: 2rem;
+    width: 2.8rem;
+    height: 2.8rem;
 }
 .feedback-container ul.stars .star.selected {
     background-image: url('../images/star_selected.png');
@@ -203,7 +209,7 @@ footer .btn {
 .feedback-container .btn-submit {
     text-align: center;
     padding: 1rem 2rem;
-    background: #45A45F;
+    background: #00AE66;
     color: #fff;
     font-size: 1.6rem;
 }
@@ -213,9 +219,9 @@ footer .btn {
     padding: 0 1.5rem;
 }
 .module .sc-title {
-    padding: 1rem 0 .4rem;
+    padding: 1rem 0 .8rem;
     border-bottom: 1px solid #eee;
-    margin-bottom: .6rem;
+    margin-bottom: 1rem;
 }
 .module ul {
     padding: 0;
@@ -225,22 +231,25 @@ footer .btn {
     margin-bottom: 0;
 }
 .module ul li.selected {
-    background: #45A45F;
+    background: #00AE66;
     color: #fff;
-    border-color: #45A45F;
+    border-color: #00AE66;
 }
 .module ul li,.module .btn-add  {
     display: inline-block;
-    padding: .4rem .5rem;;
-    font-size: 1.2rem;
-    border: 1px dashed #45A45F;
-    margin-bottom: .5rem;
+    padding: .6rem .75rem;
+    font-size: 1.4rem;
+    border: 1px dashed #00AE66;
+    margin-bottom: .8rem;
     margin-right: .5rem;
 }
+.module ul li:nth-child(3n) {
+    margin-right: 0;
+}
 .module ul li.selected {
-    background: #45A45F;
+    background: #00AE66;
     color: #fff;
-    border-color: #45A45F;
+    border-color: #00AE66;
 }
 .module.negative ul li, .module.negative .btn-add  {
     border-color: #EC5B60;
@@ -283,7 +292,7 @@ footer .btn {
     display: none;
     position: absolute;
     width: 76%;
-    height: 12rem;
+    height: 15rem;
     left: 50%;
     top: 50%;
     margin-left: -38%;
